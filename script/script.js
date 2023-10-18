@@ -75,6 +75,7 @@ const swiperResult = new Swiper('.result__swiper', {
   grabCursor: true,
   slidesPerView: 1,
   spaceBetween: 20,
+  // loop: true,
 
   breakpoints: {
     1450: {
@@ -85,7 +86,43 @@ const swiperResult = new Swiper('.result__swiper', {
       slidesPerView: 4,
     },
     768: {
+      slidesPerView: 3,
+    },
+    480: {
       slidesPerView: 2,
     }
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+// MAGNIFIC
+
+$(document).ready(function() {
+  // Инициализируем Magnific Popup
+  $('.popup-link').magnificPopup({
+    type: 'inline',
+    closeMarkup: '<button title="%title%" class="mfp-close">×</button>'
+  });
+
+  // Функция для открытия модального окна 1
+  $('.modal__btn').on('click', function() {
+    $.magnificPopup.open({
+      items: {
+        src: '#modal1'
+      },
+      type: 'inline'
+    });
+  });
+
+});
+
+
