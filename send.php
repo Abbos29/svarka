@@ -1,21 +1,21 @@
 <?php
 
-$name = $_POST['name'];
+// $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$text = $_POST['textarea'];
+// $text = $_POST['textarea'];
 
-$token = "TELEGRAM_BOT_TOKEN"; // Токен телеграм бота
+$token = "6731422585:AAE2tdvMoc1Klcrh4XQI8UC2BfUPtZG8chk"; // Токен телеграм бота
 
 
-$chat_id = "CHAT_ID";  // Идентификатор чата
+$chat_id = "-4074942205";  // Идентификатор чата
 $chat_id2 = "CHAT_ID2";  // Дополнительный идентификатор чата
 
 $arr = array(
-    'Имя пользователя: ' => $name,
+    // 'Имя пользователя: ' => $name,
     'Почта: ' => $email,
     'Телефон: ' => $phone,
-    'Письмо: ' => $text,
+    // 'Письмо: ' => $text,
 );
 
 foreach ($arr as $key => $value) {

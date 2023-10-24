@@ -143,7 +143,7 @@ nav {
     &__box {
 
         @media (max-width: 768px) {
-            display: none;
+            // display: none;
         }
 
         span {
@@ -151,6 +151,11 @@ nav {
             font-size: 14px;
             font-weight: 400;
             border-bottom: 2px dashed black;
+
+
+            @media (max-width: 480px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -168,17 +173,21 @@ nav {
             position: absolute;
             top: 2px;
             left: -20px;
-            background-image: url(../img/phone.png);
+            background-image: url(../img/phone.svg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 12px;
         }
     }
     
 
     &__btn {
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             display: none;
         }
     }
@@ -924,3 +933,26 @@ button[type=submit]:focus{
 
 
 
+
+
+
+
+
+
+.thanks {
+    // .thanks__wrapper
+    &__wrapper {
+        padding: 140px 0;
+    }
+    // .thanks__title
+    &__title {
+        font-size: 50px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+}
+.container {
+}
